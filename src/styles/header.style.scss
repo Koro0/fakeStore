@@ -3,4 +3,23 @@
     &_navbar {
         display: flex;
     }
+    &_container {
+        display: inline-block;
+        cursor: pointer;
+    }
+    &__menu1, &__menu2, &__menu3 {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    &__menu1 .change {
+        transform: translate(0, -11px) rotate(-45deg);
+    }
+    &__menu2 .change {
+        opacity: 0;
+    }
+    &__menu3 .change {
+        transform: translate(0,-11px) rotate(45deg);
+    }
 }
