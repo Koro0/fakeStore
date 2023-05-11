@@ -1,14 +1,8 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import {Product} from './types/ProductInterface';
 
-interface Product {
-    id:number,
-    title:string,
-    price:number,
-    category:string,
-    description:string,
-    image:string
-}
 const ProductsList =  () => {
     const [products, setProducts] = useState<Product[]>()
     useEffect(()=> {
@@ -27,7 +21,7 @@ const ProductsList =  () => {
                 {products && products.map((data)=>{
                     return(
                         <li className='product' key={data.id}>
-                            <a href="/">
+                            <Link to={`/${data.id}`}>
                                 <div className="product_header">
                                     <img src={data.image} alt="" />
                                 </div>
@@ -36,7 +30,7 @@ const ProductsList =  () => {
                                     <p className='product_price'>{data.price}</p>
                                     <p className='product_description'>{data.description}</p>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     )
                 })}
