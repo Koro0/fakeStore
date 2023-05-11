@@ -6,14 +6,20 @@ ul {
     align-content: center;
     justify-content: space-evenly;
     align-items: baseline;
+    margin: 10px;
+    padding: 0;
+    min-width: 370px;
 }
 .product {
     max-width: 350px;
-
+    margin: 15px;
     a {
         text-decoration: none;
     }
     &_header img {
         max-width: 200px;
+    }
+    &_header {
+        text-align: center;
     }
 }
