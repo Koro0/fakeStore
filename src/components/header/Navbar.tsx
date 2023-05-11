@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -9,7 +10,7 @@ export default function Navbar() {
             <img src="" alt="" />
           </li>
           <li>
-            <a href="/">Accueil</a>
+            <Link to="/">Accueil</Link>
           </li>
           
         </nav>
