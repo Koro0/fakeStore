@@ -6,3 +6,7 @@ export interface Product {
     description:string,
     image:string
 }
+
+export type ProductIdRoute = {
+    id:string,
+}
