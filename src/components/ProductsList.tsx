@@ -27,8 +27,8 @@ const ProductsList =  () => {
                                 </div>
                                 <div className="product_body">
                                     <h4 className='product_title'>{data.title}</h4>
-                                    <p className='product_price'>{data.price}</p>
                                     <p className='product_description'>{data.description}</p>
+                                    <p className='product_price'>{data.price} $</p>
                                 </div>
                             </Link>
                         </li>
