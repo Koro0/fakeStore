@@ -1,0 +1,44 @@
+.item {
+    margin-top: 30px;
+
+    img {
+        max-width: 300px;
+    }
+    &_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    &_left {
+        margin: 10px;
+    }
+    &_right {
+        margin: 10px;
+    }
+    &_right1 {
+        padding: 5px;
+    }
+    &_right2 {
+        padding-right: 10px;
+    }
+    &_price {
+        text-align: end;
+        font-size: x-large;
+    }
+    &_addCard {
+        width: 100%;
+        background-color: #3331ac;
+        border: none;
+        color: white;
+        font-size: 16px;
+        margin: 4px;
+    }
+    @media screen and (max-width: 580px) {
+        &_box {
+            flex-wrap: wrap;
+        }
+    }
+}
