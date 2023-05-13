@@ -13,7 +13,7 @@ const ProductsList =  () => {
             }).catch(()=> console.error());
         };
         fethItems();
-      })
+      }, [])
 
       return(
         <section>
